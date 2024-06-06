@@ -401,4 +401,6 @@ th, td {
         width: 60px; /* Adjust width for better fit on smaller screens */
     }
 }
-
+h2 {
+    text-align: center;
+}
