@@ -149,7 +149,7 @@ footer {
     display: flex;
     justify-content: center;
     margin-bottom: 25%;
-
+}
 .main-home { /* added by Jason :: home page text was touching the edge of screen in mobile view. This corrected it */
     padding: 1em;
 }
@@ -348,5 +348,3 @@ th, td {
     padding: 8px;
     border: 1px solid #ddd;
 }
-
-
