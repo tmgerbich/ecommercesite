@@ -64,6 +64,11 @@ button {
     height: 10vw;
     margin-right: 0;
     background-color: bisque;
+    transition: background-color 0.3s ease-in;
+}
+
+button:hover {
+    background-color: darkorange; /* Color for hover effect */
 }
 
 .cart-btn {
@@ -372,3 +377,4 @@ th, td {
         width: 60px; /* Adjust width for better fit on smaller screens */
     }
 }
+
