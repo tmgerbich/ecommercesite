@@ -73,6 +73,7 @@ button {
 
 .product-img {
     margin-top: 5vw;
+    height: 20em;
     width: 20em;
     border-radius: 7%;
     box-shadow: 5px 5px 10px ;
