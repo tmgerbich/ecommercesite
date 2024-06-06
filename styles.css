@@ -229,6 +229,65 @@ footer {
 img {
     width: 100px; height: 100px;
 }
+.snacks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.card{
+    justify-content: space-between;
+    box-shadow: 5px 5px 10px 5px ;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    transition: 0.5s;
+    box-shadow: 5px 5px 10px 5px ;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.manga {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+  
+  .card p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0px;
+    background-color: #f1f1f1;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    padding: 8px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .card p:hover{
+    background-color: #808080;
+    color: white;
+    cursor: pointer;
+  }
+  h3 {
+    padding: 10px;
+  }
+
   
 .shopping_cart_container {
     display: flex;
