@@ -17,8 +17,31 @@ header {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+    color: bisque;
+}
+
+a:hover {
+    color: aquamarine;
+}
+
 nav {
     position: relative;
+}
+
+.main-home {
+    background-image: url(images/heroback.png);
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.empty {
+    height: 90vh;
 }
 
 .menu-toggle {
