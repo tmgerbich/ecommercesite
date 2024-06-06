@@ -28,7 +28,7 @@
                 <h1>Discover Your Next Favorite "..."</h1> <!-- hero headline to attract attention -->
                 <p>Explore our vast collection of manga and anime merchandise, handpicked just for you. Whether you're a seasoned fan or new to the world of manga, we have something for everyone</p>
 
-                <a href="products.html" class="btn">Shop Now</a> <!-- call to action-->
+                <button type="button" class="shop-btn">Shop</button> <!-- call to action-->
                 
                 <ul class="usps">
                     <li>Exclusive Collectibles</li> <!-- unique selling points-->
@@ -46,5 +46,10 @@
         <p>&copy; 2024 Stiegler EdTech. All Rights Reserved.</p>
     </footer>
     
+    <script>
+        document.querySelector('.shop-btn').addEventListener('click', function() {
+            window.location.href = 'products.html';
+        });
+    </script>
 </body>
 </html>
