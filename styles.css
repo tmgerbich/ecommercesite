@@ -77,6 +77,7 @@ button {
     height: 20em;
     border-radius: 7%;
     box-shadow: 5px 5px 10px ;
+    height: 100%;
 }
 
 .product {
@@ -146,11 +147,16 @@ footer {
     width: 75%;
 }
 
+.nutrition-tbl th, .nutrition-tbl td {
+    border-color: #343434;
+}
+
 .tbl-box {
     display: flex;
     justify-content: center;
     margin-bottom: 25%;
 }
+
 .main-home { /* added by Jason :: home page text was touching the edge of screen in mobile view. This corrected it */
     padding: 1em;
 }
@@ -230,6 +236,7 @@ footer {
 img {
     width: 100px; height: 100px;
 }
+
 .snacks {
   display: flex;
   flex-direction: row;
@@ -364,49 +371,4 @@ th, td {
     .quantity input {
         width: 60px; /* Adjust width for better fit on smaller screens */
     }
-}
- 
-.shopping_cart_container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    overflow-x: auto;
-}
-
-.shopping_cart {
-    width: 100%;
-    max-width: 100%;
-}
-
-.items {
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-}
-
-.items img {
-    margin-right: 10px;
-    max-width: 100px; /* Set a max width for the image */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.descriptions {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-}
-
-.price, .quantity, .subtotal {
-    text-align: center;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    padding: 8px;
-    border: 1px solid #ddd;
 }
