@@ -402,4 +402,74 @@ th, td {
         width: 60px; /* Adjust width for better fit on smaller screens */
     }
 }
+.checkout_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3.125em;
+}
+
+.summary, 
+.checkout-form {
+    background-color: #fff;
+    padding: 4em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 4em;
+}
+
+.summary h2, .checkout-form h2 {
+    text-align: left;
+    margin-bottom: 1.25em;
+}
+.summary {
+    border-right: 1px solid #ddd;
+}
+.checkout-form input, .checkout-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.checkout-form .checkout-btn {
+    width: 100%;
+    padding: 1em 1.2em;
+    margin-top: 2em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+.checkout-form .checkout-btn:hover {
+    background-color: #45a049;
+}
+
+.checkout-form .apple-pay-button {
+    width: 80%;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20em
+}
+
+#checkbox {
+    width: 1.563em;
+    margin: 0;
+}
+
+.checkbox-text {
+    display: flex;
+    float: right;
+}
 
