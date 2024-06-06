@@ -74,6 +74,7 @@ button {
 .product-img {
     margin-top: 5vw;
     width: 20em;
+    height: 20em;
     border-radius: 7%;
     box-shadow: 5px 5px 10px ;
 }
@@ -232,7 +233,7 @@ img {
 .snacks {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -254,6 +255,8 @@ img {
     padding: 10px;
     border-radius: 20px;
     position: relative;
+    width: 100px;
+    height: 250px;
 }
 
 .manga {
