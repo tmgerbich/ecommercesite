@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <header>
+        <h1>Manga Munchies</h1>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <ul id="nav-menu" class="nav-menu">
+            <a href="#products"><button>Shop</button></a>
+            <a href="#products"><button>Cart</button></a>
+            <a href="#products"><button>Checkout</button></a>
+        </ul>
+</header> 
+</head>
+<body>
+    <div class="shopping_cart_container">
+        <div class="shopping_cart">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="items">
+                            <img src="images/placeholder.jpg" alt="Placeholder">
+                            <div class="descriptions">
+                                <p>Item Name 1</p>
+                                <small>Item Brief Description 1</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="price">10.00</td>
+                    <td class="quantity"><input type="number" value="0" min="0"></td>
+                    <td class="subtotal">0.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="items">
+                            <img src="images/placeholder.jpg" alt="Placeholder">
+                            <div class="descriptions">
+                                <p>Item Name 2</p>
+                                <small>Item Brief Description 2</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="price">15.00</td>
+                    <td class="quantity"><input type="number" value="0" min="0"></td>
+                    <td class="subtotal">0.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="items">
+                            <img src="images/placeholder.jpg" alt="Placeholder">
+                            <div class="descriptions">
+                                <p>Item Name 3</p>
+                                <small>Item Brief Description 3</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="price">12.00</td>
+                    <td class="quantity"><input type="number" value="0" min="0"></td>
+                    <td class="subtotal">0.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="items">
+                            <img src="images/placeholder.jpg" alt="Placeholder">
+                            <div class="descriptions">
+                                <p>Item Name 4</p>
+                                <small>Item Brief Description 4</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="price">5.00</td>
+                    <td class="quantity"><input type="number" value="0" min="0"></td>
+                    <td class="subtotal">0.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="items">
+                            <img src="images/placeholder.jpg" alt="Placeholder">
+                            <div class="descriptions">
+                                <p>Item Name 5</p>
+                                <small>Item Brief Description 5</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="price">25.00</td>
+                    <td class="quantity"><input type="number" value="0" min="0"></td>
+                    <td class="subtotal">0.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="items">
+                            <img src="images/placeholder.jpg" alt="Placeholder">
+                            <div class="descriptions">
+                                <p>Item Name 6</p>
+                                <small>Item Brief Description 6</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="price">40.00</td>
+                    <td class="quantity"><input type="number" value="0" min="0"></td>
+                    <td class="subtotal">0.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="items">
+                            <img src="images/placeholder.jpg" alt="Placeholder">
+                            <div class="descriptions">
+                                <p>Item Name 7</p>
+                                <small>Item Brief Description 7</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="price">1.00</td>
+                    <td class="quantity"><input type="number" value="0" min="0"></td>
+                    <td class="subtotal">0.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="items">
+                            <img src="images/placeholder.jpg" alt="Placeholder">
+                            <div class="descriptions">
+                                <p>Item Name 8</p>
+                                <small>Item Brief Description 8</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="price">22.00</td>
+                    <td class="quantity"><input type="number" value="0" min="0"></td>
+                    <td class="subtotal">0.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="items">
+                            <img src="images/placeholder.jpg" alt="Placeholder">
+                            <div class="descriptions">
+                                <p>Item Name 9</p>
+                                <small>Item Brief Description 9</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="price">0.50</td>
+                    <td class="quantity"><input type="number" value="0" min="0"></td>
+                    <td class="subtotal">0.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="items">
+                            <img src="images/placeholder.jpg" alt="Placeholder">
+                            <div class="descriptions">
+                                <p>Item Name 10</p>
+                                <small>Item Brief Description 10</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="price">7.00</td>
+                    <td class="quantity"><input type="number" value="0" min="0"></td>
+                    <td class="subtotal">0.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="items">
+                            <img src="images/placeholder.jpg" alt="Placeholder">
+                            <div class="descriptions">
+                                <p>Item Name 11</p>
+                                <small>Item Brief Description 11</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="price">111.00</td>
+                    <td class="quantity"><input type="number" value="0" min="0"></td>
+                    <td class="subtotal">0.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="items">
+                            <img src="images/placeholder.jpg" alt="Placeholder">
+                            <div class="descriptions">
+                                <p>Item Name 12</p>
+                                <small>Item Brief Description 12</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="price">3.00</td>
+                    <td class="quantity"><input type="number" value="0" min="0"></td>
+                    <td class="subtotal">0.00</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </table>
+        </div>
+    </div>    
+
+    <div class="total_container">
+        <div class="total">
+            <table>
+                <tr>
+                    <th>Subtotal</th>
+                    <td><div class="data-wrapper total-subtotal">Data 1</div>0.00</td>
+                </tr>
+                <tr>
+                    <th>Taxes</th>
+                    <td><div class="data-wrapper total-taxes">Data 2</div>0.00</td>
+                </tr>
+                <tr>
+                    <th>Total</th>
+                    <td><div class="data-wrapper total-total">Data 3</div>0.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>   
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const rows = document.querySelectorAll('.shopping_cart table tr');
+
+            rows.forEach(row => {
+                const quantityInput = row.querySelector('.quantity input');
+                if (quantityInput) {
+                    const priceElement = row.querySelector('.price');
+                    const subtotalElement = row.querySelector('.subtotal');
+
+                    quantityInput.addEventListener('input', function () {
+                        const price = parseFloat(priceElement.textContent);
+                        const quantity = parseInt(quantityInput.value, 10);
+                        const subtotal = price * quantity;
+                        subtotalElement.textContent = subtotal.toFixed(2);
+
+                        updateTotal();
+                    });
+                }
+            });
+
+            function updateTotal() {
+                let total = 0;
+                const subtotalElements = document.querySelectorAll('.subtotal');
+
+                subtotalElements.forEach(subtotalElement => {
+                    total += parseFloat(subtotalElement.textContent);
+                });
+
+                document.querySelector('.total-subtotal').textContent = total.toFixed(2);
+                updateTaxes(total);
+            }
+
+            function updateTaxes(subtotal) {
+                const taxRate = 0.06;
+                const taxes = subtotal * taxRate;
+                document.querySelector('.total-taxes').textContent = taxes.toFixed(2);
+                updateGrandTotal(subtotal, taxes);
+            }
+
+            function updateGrandTotal(subtotal, taxes) {
+                const grandTotal = subtotal + taxes;
+                document.querySelector('.total-total').textContent = grandTotal.toFixed(2);
+            }
+        });
+    </script>
+</body>
+<footer>
+    <p>&copy; 2024 Manga Munchies. All Rights Reserved.</p>
+</footer>
+</html>
