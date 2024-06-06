@@ -37,7 +37,7 @@
                             <img src="./images/HelloPanda.jpg" alt="Hello panda snack">
                             <div class="descriptions">
                                 <p>Hello Panda</p>
-                                <small>Item Brief Description 1</small>
+                                <small>Cream-filled biscuits</small>
                             </div>
                         </div>
                     </td>
@@ -51,7 +51,7 @@
                             <img src="./images/Pocky.jpg" alt="Pocky Snack">
                             <div class="descriptions">
                                 <p>Pocky</p>
-                                <small>Item Brief Description 2</small>
+                                <small>Chocolate-covered sticks</small>
                             </div>
                         </div>
                     </td>
@@ -65,7 +65,7 @@
                             <img src="./images/Elotes.jpg" alt="Seasoned corn snack">
                             <div class="descriptions">
                                 <p>Elotes</p>
-                                <small>Item Brief Description 3</small>
+                                <small>Spicy corn snack</small>
                             </div>
                         </div>
                     </td>
@@ -79,7 +79,7 @@
                             <img img src="./images/chicharrones.jpg" alt="Mexican chips"">
                             <div class="descriptions">
                                 <p>Chicharrón de Rueda</p>
-                                <small>Item Brief Description 4</small>
+                                <small>Crunchy wheat snacks</small>
                             </div>
                         </div>
                     </td>
@@ -93,7 +93,7 @@
                             <img src="./images/ramune.png" alt="KitKat Candy">
                             <div class="descriptions">
                                 <p>Ramune</p>
-                                <small>Item Brief Description 5</small>
+                                <small>Japanese soda drink</small>
                             </div>
                         </div>
                     </td>
@@ -107,7 +107,7 @@
                             <img src="./images/Taki.jpg" alt="Takis Snack">
                             <div class="descriptions">
                                 <p>Takis</p>
-                                <small>Item Brief Description 6</small>
+                                <small>Spicy rolled chips</small>
                             </div>
                         </div>
                     </td>
@@ -121,7 +121,7 @@
                             <img img src="./images/JJK.jpg" alt="Jujutsu Kaisen"">
                             <div class="descriptions">
                                 <p>Jujutsu Kaisen</p>
-                                <small>Item Brief Description 7</small>
+                                <small>Supernatural battles</small>
                             </div>
                         </div>
                     </td>
@@ -135,7 +135,7 @@
                             <img src="./images/HxH.jpg" alt="Hunter X Hunter Anime/Manga">
                             <div class="descriptions">
                                 <p>Hunter X Hunter</p>
-                                <small>Item Brief Description 8</small>
+                                <small>Epic adventure quest</small>
                             </div>
                         </div>
                     </td>
@@ -149,7 +149,7 @@
                             <img img src="./images/Bleach.jpg" alt="Bleach Manga">
                             <div class="descriptions">
                                 <p>Bleach</p>
-                                <small>Item Brief Description 9</small>
+                                <small>Soul reaper adventures</small>
                             </div>
                         </div>
                     </td>
@@ -163,7 +163,7 @@
                             <img src="./images/AoT.jpg" alt="Attack on Titan Anime">
                             <div class="descriptions">
                                 <p>Attack on Titan</p>
-                                <small>Item Brief Description 10</small>
+                                <small>Titan-fighting action</small>
                             </div>
                         </div>
                     </td>
@@ -177,7 +177,7 @@
                             <img img src="./images/Inuyaha.jpg" alt="Inuyasha anime/Manga">
                             <div class="descriptions">
                                 <p>Inuyasha</p>
-                                <small>Item Brief Description 11</small>
+                                <small>Half-demon journey</small>
                             </div>
                         </div>
                     </td>
@@ -191,7 +191,7 @@
                             <img src="./images/DemonSlayer.jpg" alt="Demon Slayer Anime">
                             <div class="descriptions">
                                 <p>Demon Slayer</p>
-                                <small>Item Brief Description 12</small>
+                                <small>Demon-hunting saga</small>
                             </div>
                         </div>
                     </td>
@@ -209,19 +209,20 @@
             <table>
                 <tr>
                     <th>Subtotal</th>
-                    <td><div class="data-wrapper total-subtotal">Data 1</div>0.00</td>
+                    <td><div class="data-wrapper total-subtotal">Data 1</div></td>
                 </tr>
                 <tr>
                     <th>Taxes</th>
-                    <td><div class="data-wrapper total-taxes">Data 2</div>0.00</td>
+                    <td><div class="data-wrapper total-taxes">Data 2</div></td>
                 </tr>
                 <tr>
                     <th>Total</th>
-                    <td><div class="data-wrapper total-total">Data 3</div>0.00</td>
+                    <td><div class="data-wrapper total-total">Data 3</div></td>
                 </tr>
             </table>
         </div>
-    </div>   
+    </div>
+    <button type="button" class="checkout-btn">Checkout</button> 
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -267,6 +268,11 @@
                 const grandTotal = subtotal + taxes;
                 document.querySelector('.total-total').textContent = grandTotal.toFixed(2);
             }
+        });
+    </script>
+    <script>
+        document.querySelector('.checkout-btn').addEventListener('click', function() {
+            window.location.href = 'checkout.html';
         });
     </script>
 </body>
