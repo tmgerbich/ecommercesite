@@ -67,13 +67,13 @@ button {
 }
 
 .cart-btn {
-    width: 25vw;
+    width: fit-content;
+    max-height: 35px;
 }
 
 .product-img {
-    margin-left: 5vw;
     margin-top: 5vw;
-    width: 90%;
+    width: 20em;
     border-radius: 7%;
     box-shadow: 5px 5px 10px ;
 }
@@ -81,10 +81,13 @@ button {
 .product {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 .product-image {
-
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 .product-desc {
@@ -94,23 +97,33 @@ button {
     padding-left: 3vw;
     padding-right: 3vw;
     text-align: justify;
+    width: 94%;
     height: 35vh;
     justify-content: space-evenly;
 }
 
 .review-stars {
-    width: 50%;
-    scale: 0.75;
+    width: 10em;
+    height: fit-content;
 }
 
 .add-cart {
     display: flex;
 }
 
+.price-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10em;
+}
+
 .cart-review {
     display: flex;
-
-    justify-content: center;
+    margin-bottom: 10%;
+    width: 25em;
+    justify-content: space-between;
+    align-items: center;
     padding-left: 20px;
 }
 
@@ -126,6 +139,16 @@ footer {
     bottom: 0;
     position: fixed;
     width: 100vw;
+}
+
+.nutrition-tbl {
+    width: 75%;
+}
+
+.tbl-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25%;
 }
 
 /* Media Queries for Larger Screens */
@@ -148,4 +171,55 @@ footer {
         width: 10vw;
         height: 5vw;
     }
+
+    .product-desc span p{
+        width: 53em;
+        margin: 0;
+    }
+
+    .tbl-box {
+        margin-bottom: 10%;
+    }
+
 }
+
+@media (max-width:389px) {
+    .cart-btn {
+        width: fit-content;
+    }
+
+    .tbl-box {
+        margin-top: 10%;
+    }
+}
+@media (min-width:513px) {
+    .cart-btn {
+        width: 90px;
+    }
+    .nutrition-tbl {
+        width: 385px;
+    }
+
+
+}
+@media (min-width:600px) { 
+    .product-desc {
+        width: 90vw;
+        margin-left: 2%;
+    }
+
+    .tbl-box {
+        margin-bottom: 18%;
+    }
+}
+@media (min-width:1025px) { 
+    .product-desc {
+        margin-top: 3%;
+        justify-content: space-between;
+    }
+
+    .tbl-box {
+        margin-bottom: 10%;
+    }
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
