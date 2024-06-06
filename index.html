@@ -8,24 +8,27 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">Manga Munchies</div>
-            <ul class="nav-links"> 
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Cart</a></li>
-                <li><a href="#">Checkout</a></li>
-            </ul>
-        </nav>
-    </header>
+        <h1>Manga Munchies</h1>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <ul id="nav-menu" class="nav-menu">
+            <a href="products.html"><button>Shop</button></a>
+            <a href="cart.html"><button>Cart</button></a>
+            <a href="checkout.html"><button>Checkout</button></a>
+        </ul>
+</header>
 
-    <main>
+    <main class="main-home">
         <section class="hero">
             <div class="hero-content">
                 <h1>Discover Your Next Favorite "..."</h1> <!-- hero headline to attract attention -->
                 <p>Explore our vast collection of manga and anime merchandise, handpicked just for you. Whether you're a seasoned fan or new to the world of manga, we have something for everyone</p>
 
-                <a href="#" class="btn">Shop Now</a> <!-- call to action-->
+                <a href="products.html" class="btn">Shop Now</a> <!-- call to action-->
                 
                 <ul class="usps">
                     <li>Exclusive Collectibles</li> <!-- unique selling points-->

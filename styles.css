@@ -128,6 +128,10 @@ footer {
     width: 100vw;
 }
 
+.main-home { /* added by Jason :: home page text was touching the edge of screen in mobile view. This corrected it */
+    padding: 1em;
+}
+
 /* Media Queries for Larger Screens */
 @media (min-width: 768px) {
     .menu-icon {
