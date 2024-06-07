@@ -570,6 +570,16 @@ th, td {
     .quantity input {
         width: 60px; /* Adjust width for better fit on smaller screens */
     }
+
+    .checkbox-group {
+        flex-direction: column; /* Stack the checkbox and label vertically */
+        align-items: flex-start; /* Align items to the start */
+        
+    }
+
+    input[type="checkbox"] {
+        margin-bottom: 5px;
+    }
 }
 .checkout_container {
     display: flex;
@@ -594,6 +604,7 @@ th, td {
 }
 
 .checkout-form .checkout-btn {
+    height: auto;
     width: 100%;
     padding: 1em 1.2em;
     margin-top: 2em;
@@ -608,6 +619,7 @@ th, td {
 }
 
 .checkout-form .apple-pay-button {
+    height: auto;
     width: 80%;
     padding: 15px;
     background-color: black;
@@ -621,9 +633,10 @@ th, td {
 
 .checkbox-group {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20em
+    align-items: flex-start;
+    margin-left: -30px;
+    border: .5em;
+    padding-left: 2em;
 }
 
 #checkbox {
