@@ -578,27 +578,21 @@ th, td {
     margin-top: 3.125em;
 }
 
-.summary, 
-.checkout-form {
-    background-color: #fff;
-    padding: 4em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    margin-bottom: 4em;
-}
-
 .summary h2, .checkout-form h2 {
     text-align: left;
     margin-bottom: 1.25em;
 }
 .summary {
     border-right: 1px solid #ddd;
+    animation: slideFrom 1s;
 }
+
 .checkout-form input, .checkout-form select {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
 }
+
 .checkout-form .checkout-btn {
     width: 100%;
     padding: 1em 1.2em;
@@ -637,6 +631,10 @@ th, td {
     margin: 0;
 }
 
+.checkout-form {
+    animation: slideIn 2s;
+}
+
 .checkbox-text {
     display: flex;
     float: right;
@@ -661,66 +659,20 @@ th, td {
     margin-bottom: 4em;
 }
 
-.summary h2, .checkout-form h2 {
-    text-align: left;
-    margin-bottom: 1.25em;
-}
-.summary {
-    border-right: 1px solid #ddd;
-}
-.checkout-form input, .checkout-form select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-}
-.checkout-form .checkout-btn {
-    height: 85px;
-    width: 100%;
-    padding: 1em 1.2em;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1.5em;
-}
-.checkout-form .checkout-btn:hover {
-    background-color: #45a049;
-}
-
-.checkout-form .apple-pay-button {
-    height: 75px;
-    width: 100px;
-    padding: 15px;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.checkbox-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20em
-}
-
-#checkbox {
-    width: 1.563em;
-    margin: 0;
-}
-
-.checkbox-text {
-    display: flex;
-    float: right;
-}
 @keyframes slideIn {
     from {
         transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFrom {
+    from {
+        transform: translateX(-100%);
         opacity: 0;
     }
     to {
