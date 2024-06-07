@@ -293,9 +293,21 @@ footer {
         height: auto; /* Adjust as needed for larger screens */
     }
 
-    .shopping_cart, .shopping_cart_container, table {
+    table {
         width: 760px;
     }
+
+    .shopping_cart {
+        display: flex;
+        justify-content: center;
+    }
+
+    .total {
+        display: flex;
+        justify-content: center;
+    }
+
+
 
 }
 
@@ -523,6 +535,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     animation: fadeIn 2s;
+    max-width: 760px;
 }
 
 th, td {
