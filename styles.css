@@ -8,6 +8,11 @@ body {
     background-color: #fcd3de;
 }
 
+.logo {
+    height: 4.052em;
+    width: 6em;
+}
+
 header {
     background: #343434;
     color: #fff;
@@ -263,8 +268,9 @@ footer {
 }
 
 img {
-    width: 100px; height: 100px;
+    /* width: 100px; height: 100px; */
 }
+
 
 .snacks {
   display: flex;
