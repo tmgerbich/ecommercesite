@@ -17,10 +17,6 @@ header {
     align-items: center;
 }
 
-.logo {
-    height: auto;
-}
-
 a {
     text-decoration: none;
     color: bisque;
