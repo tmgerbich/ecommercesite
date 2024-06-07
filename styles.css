@@ -8,9 +8,14 @@ body {
     background-color: #fcd3de;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
-    height: 4.052em;
-    width: 6em;
+    height: 50px;
+    margin-right: 10px;
 }
 
 header {
@@ -235,6 +240,17 @@ footer {
     .tbl-box {
         margin-top: 10%;
     }
+
+    .checkbox-group {
+        flex-direction: column; /* Stack the checkbox and label vertically */
+        align-items: flex-start; /* Align items to the start */
+        margin-left: -75px;
+        border: .5em
+    }
+
+    input[type="checkbox"] {
+        margin-bottom: 5px;
+    }
 }
 @media (min-width:513px) {
     .cart-btn {
@@ -267,8 +283,8 @@ footer {
     }
 }
 
-img {
-    /* width: 100px; height: 100px; */
+.card img {
+     width: 100px; height: 100px;
 }
 
 
@@ -436,9 +452,11 @@ th, td {
     margin-bottom: 15px;
 }
 .checkout-form .checkout-btn {
+    height: 85px;
     width: 100%;
     padding: 1em 1.2em;
     margin-top: 2em;
+    margin-bottom: 2em;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -450,7 +468,8 @@ th, td {
 }
 
 .checkout-form .apple-pay-button {
-    width: 80%;
+    height: 75px;
+    width: 100px;
     padding: 15px;
     background-color: black;
     color: white;
