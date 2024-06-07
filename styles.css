@@ -286,6 +286,7 @@ footer {
         height: 100%; /* Adjust for larger screens */
         object-fit: cover;
         object-position: center;
+        
     }
 
     .mask1 {
@@ -350,8 +351,15 @@ footer {
         height: 100%; /* Set the height for mobile view */
         overflow: visible;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media (min-width:1920px) {
+    .mask1 {
+        height: fit-content;
     }
 }
 
