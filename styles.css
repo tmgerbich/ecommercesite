@@ -497,8 +497,8 @@ footer {
 
 .items img {
     margin-right: 10px;
-    max-width: 100px; /* Set a max width for the image */
-    height: auto; /* Maintain aspect ratio */
+    width: 100px; /* Set a max width for the image */
+    height: 100px; /* Maintain aspect ratio */
 }
 
 .descriptions {
